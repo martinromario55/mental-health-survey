@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Mental Health Survey</title>
+</head>
+
+<body>
+
+    
+    <header>
+        <nav>
+            <ul>
+                <li id="brand-name"><a href="">Mental Health</a><span class="span-1" id="survey">Survey</span></li>
+                <li id="signup"><a href="">Sign Up Free</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="heading">
+            <h1>Mental Health Survey Questions</h1>
+            <p>Please take a few minutes to fill out this survey on the overall status of your mental health. We value your feedback
+                and your responses will be kept confidential. Thank you for your input.
+            </p>
+        </div>
+        
+        <div class="questions">
+            <p>Gender:</p>
+            <input type="radio" name="Gender" id="male">Male<br>
+            <input type="radio" name="Gender" id="female">Female<br>
+            <input type="radio" name="Gender" id="others">Others<br>
+            <input type="radio" name="Gender" id="none">Prefer not to say
+        </div>
+
+
+        <div class="questions">
+            <p>Age:</p>
+            <input type="number" name="Age" id="age">
+        </div>
+
+        <div class="questions">
+            <p>During the past 4 weeks, have you had any problems with your work or daily life due to your physical health?</p>
+
+            <input type="radio" name="duration" id="y1">Yes<br>
+            <input type="radio" name="duration" id="n1">No<br>
+            <input type="radio" name="duration" id="dn1">Don't know
+        </div>
+
+        <div class="questions">
+            <p>During the past 4 weeks, have you had any problems with your work or daily life due to any emotional problems, such as
+            feeling depressed, sad or anxious?</p>
+
+            <input type="radio" name="weeks" id="y2">Yes<br>
+            <input type="radio" name="weeks" id="n2">No<br>
+            <input type="radio" name="weeks" id="dn2">Don't know
+        </div>
+
+        <div class="questions">
+            <p>Overall how would you rate your mental health?</p>
+
+            <input type="radio" name="rate" id="excellent">Excellent<br>
+            <input type="radio" name="rate" id="soso">Somewhat good<br>
+            <input type="radio" name="rate" id="average">Average<br>
+            <input type="radio" name="rate" id="spoor">Somewhat poor<br>
+            <input type="radio" name="rate" id="poor">poor<br>
+            <input type="radio" name="rate" id="ns">Not sure
+        </div>
+
+        <div class="questions">
+            <p>Have you felt particularly low or down for more than 2 weeks in a row?</p>
+            <input type="radio" name="feel" id="vo">Very often<br>
+            <input type="radio" name="feel" id="swo">Somewhat often<br>
+            <input type="radio" name="feel" id="nso">Not so often<br>
+            <input type="radio" name="feel" id="naa">Not at all
+        </div>
+
+        <div class="questions">
+            <p>During the past two weeks, how often has your mental health affected your relationships?</p>
+
+            <input type="radio" name="effect" id="vo1">Very often<br>
+            <input type="radio" name="effect" id="swo1">Somewhat often<br>
+            <input type="radio" name="effect" id="nso1">Not so often<br>
+            <input type="radio" name="effect" id="naa1">Not at all
+        </div>
+
+        <div class="questions">
+            <p>How often do you experience below?</p>
+
+            <table id="t1">
+                <tr class="rows">
+                    <td></td>
+                    <td>Never</td>
+                    <td>Only in a while</td>
+                    <td>About half the time</td>
+                    <td>Most of the time</td>
+                    <td>Always</td>
+                </tr>
+                <tr>
+                    <td>Calm and peaceful</td>
+                    <td><input type="radio" name="calm" id="c1"></td>
+                    <td><input type="radio" name="calm" id="c2"></td>
+                    <td><input type="radio" name="calm" id="c3"></td>
+                    <td><input type="radio" name="calm" id="c4"></td>
+                    <td><input type="radio" name="calm" id="c5"></td>
+                </tr>
+                <tr class="rows">
+                    <td>Energetic</td>
+                    <td><input type="radio" name="energetic" id="e1"></td>
+                    <td><input type="radio" name="energetic" id="e2"></td>
+                    <td><input type="radio" name="energetic" id="e3"></td>
+                    <td><input type="radio" name="energetic" id="e4"></td>
+                    <td><input type="radio" name="energetic" id="e5"></td>
+                </tr>
+                <tr>
+                    <td>Gloomy</td>
+                    <td><input type="radio" name="gloomy" id="g1"></td>
+                    <td><input type="radio" name="gloomy" id="g2"></td>
+                    <td><input type="radio" name="gloomy" id="g3"></td>
+                    <td><input type="radio" name="gloomy" id="g4"></td>
+                    <td><input type="radio" name="gloomy" id="g5"></td>
+                </tr>
+                <tr class="rows">
+                    <td>Angry</td>
+                    <td><input type="radio" name="angry" id="a1"></td>
+                    <td><input type="radio" name="angry" id="a2"></td>
+                    <td><input type="radio" name="angry" id="a3"></td>
+                    <td><input type="radio" name="angry" id="a4"></td>
+                    <td><input type="radio" name="angry" id="a5"></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="questions">
+            <p>Have you ever been diagnosed with a mental disorder before?</p>
+
+            <input type="radio" name="m1" id="y2">Yes<br>
+            <input type="radio" name="m1" id="n3">No
+        </div>
+
+        <div class="questions">
+            <p>When did you last get your mental health examination done?</p>
+
+            <input type="radio" name="exam" id="ex1">Less than 6 months ago<br>
+            <input type="radio" name="exam" id="ex2">6 months ago<br>
+            <input type="radio" name="exam" id="ex3">A year ago<br>
+            <input type="radio" name="exam" id="ex4">More than a year ago<br>
+            <input type="radio" name="exam" id="ex5">Never been examined
+
+        </div>
+
+        <div class="questions">
+            <p>Is there a history of mental disorder in your family?</p>
+
+            <input type="radio" name="hist" id="y3">Yes<br>
+            <input type="radio" name="hist" id="n3">No
+        </div>
+
+        <div class="questions">
+            <p>If "Yes", please select which of the family member(s) has/had a history of mental illness.</p>
+
+            <input type="checkbox" name="Mother" id="mom">Mother<br>
+            <input type="checkbox" name="Father" id="pap">Father<br>
+            <input type="checkbox" name="Brother" id="bro">Brother<br>
+            <input type="checkbox" name="Sister" id="sis">Sister<br>
+            <input type="checkbox" name="Grandfather" id="gf">Grandfather<br>
+            <input type="checkbox" name="Grandmother" id="gm">Grandmother<br>
+            <input type="checkbox" name="Other" id="other">Other
+        </div>
+
+        <div class="questions">
+            <p>Does your health limit you in doing daily activities?</p>
+
+            <table id="t2">
+                <tr class="rows">
+                    <td></td>
+                    <td>Very less</td>
+                    <td>Moderate</td>
+                    <td>Very Much</td>
+                    <td>No problem</td>
+                </tr>
+                <tr>
+                    <td>Light physical activities</td>
+                    <td><input type="radio" name="light" id="l1"></td>
+                    <td><input type="radio" name="light" id="l2"></td>
+                    <td><input type="radio" name="light" id="l3"></td>
+                    <td><input type="radio" name="light" id="l4"></td>
+                </tr>
+                <tr class="rows">
+                    <td>Moderate physical activities</td>
+                    <td><input type="radio" name="Moderate" id="mod1"></td>
+                    <td><input type="radio" name="Moderate" id="mod2"></td>
+                    <td><input type="radio" name="Moderate" id="mod3"></td>
+                    <td><input type="radio" name="Moderate" id="mod4"></td>
+                </tr>
+                <tr>
+                    <td>Heavy physical activities</td>
+                    <td><input type="radio" name="heavy" id="h1"></td>
+                    <td><input type="radio" name="heavy" id="h2"></td>
+                    <td><input type="radio" name="heavy" id="h3"></td>
+                    <td><input type="radio" name="heavy" id="h4"></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="questions">
+            <p>Have you seen a therapist in the recent past?</p>
+
+            <input type="radio" name="therapy" id="y4">Yes<br>
+            <input type="radio" name="therapy" id="n4">No
+        </div>
+
+        <div class="questions">
+            <p>Are you currently taking any medication?</p>
+
+            <input type="radio" name="med" id="y5">Yes<br>
+            <input type="radio" name="med" id="n5">No
+        </div>
+
+        <div class="questions">
+            <p>How many hours do you sleep per day?</p>
+
+            <input type="radio" name="sleep" id="four">Less than 4<br>
+            <input type="radio" name="sleep" id="six">4-6<br>
+            <input type="radio" name="sleep" id="nine">7-9<br>
+            <input type="radio" name="sleep" id="plus">9+
+        </div>
+
+        <div class="questions">
+            <p>How is your quality of sleep?</p>
+
+            <input type="radio" name="quality" id="q1">Very bad<br>
+            <input type="radio" name="quality" id="q2">Bad<br>
+            <input type="radio" name="quality" id="q3">Normal<br>
+            <input type="radio" name="quality" id="q4">Good<br>
+            <input type="radio" name="quality" id="q5">Very good
+        </div>
+
+        <div class="questions">
+            <p>What is your marital status?</p>
+
+            <input type="radio" name="status" id="married">Married<br>
+            <input type="radio" name="status" id="widowed">Widowed<br>
+            <input type="radio" name="status" id="divorced">Divorced<br>
+            <input type="radio" name="status" id="separated">Separated<br>
+            <input type="radio" name="status" id="single">Never married
+        </div>
+        
+        <div class="questions">
+            <p>Are you a heavy smoker?</p>
+
+            <input type="radio" name="smoker" id="y6">Yes<br>
+            <input type="radio" name="smoker" id="n6">No
+        </div>
+
+        <div class="questions">
+            <p>Are you alcoholic?</p>
+
+            <input type="radio" name="alcoholic" id="y7">Yes<br>
+            <input type="radio" name="alcoholic" id="n7">No
+        </div>
+
+        <div class="questions">
+            <p>How often do you feel positive about your life?</p>
+
+            <input type="radio" name="hours" id="never">Never<br>
+            <input type="radio" name="hours" id="once">Once in a while<br>
+            <input type="radio" name="hours" id="half">About half the time<br>
+            <input type="radio" name="hours" id="mostly">Most of the time<br>
+            <input type="radio" name="hours" id="always">Always
+        </div>
+
+        <div class="submit">
+            <input type="button" value="Submit">
+        </div>
+
+    </main>
+    <footer>
+        <nav>
+            <ul>
+                <li id="brand-name"><a href="">Mental Health</a><span class="span-1" id="survey">Survey</span></li>
+                <li id="signup"><a href="">Sign Up Free</a></li>
+            </ul>
+        </nav>
+        <div class="flex">
+            <ul>
+                <li><i class="fab fa-twitter"></i>Twitter</li>
+                <li><i class="fab fa-linkedin-in"></i>Linkedin</li>
+                <li><i class="fab fa-youtube"></i>YouTube</li>
+                <li><i class="fab fa-facebook-f"></i>Facebook</li>
+                <li><i class="fas fa-question-circle"></i>Help center</li>
+                <li><i class="far fa-comment-dots"></i>Live chat</li>
+            </ul>
+        </div>
+
+        <div class="copyright">
+            <p>&copy; 2021 No rights reserved. Actually, share, steal (like a pro) and get inspiration as much as you want. We live in a
+            free world. 🌎️</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

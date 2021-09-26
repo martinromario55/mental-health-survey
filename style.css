@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+:root {
+  --white: #fff;
+  --black: #000;
+  --border-radius-small: 2px;
+  --border-radius-medium: 4px;
+  --border-radius-large: 6px;
+  --success: #16c79a;
+  --error: #f05454;
+  --body-bg: #f3f6f9;
+  --card-bg: #ffffff;
+  --theme-color: #0571f0;
+  --theme-color-dark: #140d61;
+  --light-bg-color: #f3f6f9;
+  --text-color-normal: #424447;
+  --text-color-dark: #06111d;
+  --text-color-light: #a1a1a1;
+  --border-color: #e8e9eb;
+  --shadow: 0px 2px 20px rgba(0, 0, 0, 0.08);
+  --shadow-two: 0px 2px 40px rgba(0, 0, 0, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  height: 100vh;
+}
+
+/* HEADER */
+header {
+  box-shadow: var(--shadow-two);
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  background-color: var(--light-bg-color);
+  z-index: 999;
+}
+
+nav {
+  width: 80%;
+  margin: 0 auto;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+nav ul li {
+  list-style-type: none;
+  margin: 1em 0;
+  padding: .5em 0;
+}
+
+nav ul li a {
+  font-size: larger;
+  padding: 1em .8em;
+  text-decoration: none;
+  margin: .8em 0;
+  font-weight: bolder;
+}
+
+#brand-name a {
+  background-color: var(--theme-color-dark);
+  color: white;
+  border-radius: var(--border-radius-small);
+}
+
+#signup {
+  background-color: var(--theme-color);
+  border-radius: var(--border-radius-small);
+}
+
+#signup a {
+  color: var(--white);
+}
+
+.span-1 a {
+  background-color: var(--white);
+}
+
+#survey {
+  padding-left: .5em;
+  font-size: x-large;
+  font-weight: bolder;
+  color: var(--theme-color);
+  font-style: italic;
+}
+
+/* MAIN */
+
+main {
+  width: 80%;
+  margin-top: 90px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--light-bg-color);
+}
+
+h1 {
+  text-align: center;
+  padding: .5em;
+}
+
+.heading, .questions {
+  margin-bottom: 1em;
+}
+
+.heading p, .questions p {
+  padding: .5em;
+  color: var(--text-color-normal);
+  font-weight: bold;
+  margin-bottom: .5em;
+}
+
+input[type="radio"], input[type="checkbox"], input[type="number"], input[type="button"] {
+  margin-left: .5em;
+  margin-right: .7em;
+  margin-bottom: .8em;
+  width: 25px;
+  height: 25px;
+  position: relative;
+  top: 5px;
+  
+  
+}
+
+input[type="number"] {
+  width: 60px;
+  height: 30px;
+  border: 2px solid var(--theme-color-dark);
+  border-radius: var(--border-radius-small);
+}
+
+#t1 {
+  margin: .5em;
+}
+
+#t1 td {
+  width: 90px;
+  margin: .3em;
+  text-align: center;
+}
+
+#t2 {
+  margin: .5em;
+}
+
+#t2 td {
+  padding: .5em;
+}
+
+.rows td {
+  background-color: var(--white);
+}
+
+.submit {
+  width: 50%;
+  margin: 0 auto;
+}
+input[type="button"] {
+  width: 100%;
+  background-color: var(--success);
+  border-color: var(--success);
+  color: var(--white);
+  font-size: larger;
+  font-weight: bold;
+  border-radius: var(--border-radius-medium);
+  
+}
+
+input[type="button"]:hover {
+  background-color: var(--theme-color);
+  border-color: var(--theme-color);
+}
+
+/* FOOTER */
+
+footer {
+  margin-top: 2em;
+  background-color: var(--theme-color-dark);
+}
+
+.flex ul li {
+  color: var(--white);
+  list-style-type: none;
+  padding: .5em;
+}
+
+.flex ul li:hover {
+  color: var(--theme-color);
+}
+
+.flex ul {
+  display: flex;
+}
+
+.flex {
+  width: 80%;
+  margin: 1em auto;
+}
+
+.fab, .fas, .far {
+  padding: .3em;
+}
+
+.copyright {
+  width: 50%;
+  margin: 2em auto;
+  height: 100px;
+}
+
+.copyright p {
+  color: var(--white);
+  align-items: center;
+  margin-bottom: 1em;
+}
+/* Media Queries */
+
+@media (min-width: 320px) and (max-width: 480px) {
+  /* Mobile devices */
+}
+
+@media (min-width: 481px) and (max-width: 760px) {
+  /* iPads, Tablet */
+}
+
+@media (min-width: 761px) and (max-width: 1024px) {
+  /* small screens, laptops */
+}
+
+@media (min-width: 1025px) and (max-width: 1299px) {
+  /* Desktops, large screens */
+}
+
+@media (min-width: 1201px) {
+  /* Extra large screens, TV devices */
+}
